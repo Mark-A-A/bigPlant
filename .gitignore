@@ -1,0 +1,20 @@
+# Node
+/node_modules
+.npm
+.env
+.jspm
+
+# editor
+.vscode
+
+# Logs
+logs
+*.logs
+*.log
+
+# Build folders
+/dist
+/build
+
+# Mac files
+.DS_STORE

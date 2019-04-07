@@ -1,0 +1,63 @@
+nav.navbar {
+  width: 100%;
+  margin-bottom: 0;
+  border: none;
+  position: fixed;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0px 1px 2px #E0E0E0;
+
+  .nav-items-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .nav-item.brand-logo {
+      flex: 1 30%;
+      img {
+        width: 75px; 
+      }
+    }
+    .nav-item.title {
+      flex: 1 40%;
+      .navbar-brand-header {
+        display: inherit
+      }
+      h1 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 3rem;
+      }
+    }
+
+    .nav-item.buttons {
+      flex: 1 30%;
+      flex-direction: row;
+
+      .btn-toolbar {
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .dropdown {
+          // background-color:red;
+          // width: 50%;
+          
+          .button {
+            width: 100%;
+            
+          }
+        }
+        // .about {
+        //   flex:1 30%;
+        // }
+        // .buy-plants{
+        //   flex: 1 70%
+        // }
+      }
+      button {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
