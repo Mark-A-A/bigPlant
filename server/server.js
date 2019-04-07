@@ -2,7 +2,8 @@ import express from "express";
 // import path from "path";
 
 import routes from "./routes";
-import connectToMongoDB from "./config"
+
+import connectToMongoDB from "./config/connectToMongoDB"
 
 const PORT = process.env.PORT || 1738;
 
@@ -22,8 +23,16 @@ app.use(routes);
 
 // Connect to the Mongo DB
 connectToMongoDB()
+  .then(()=>{
+    //Start server
+    app.listen(PORT, function() {
+      console.log(`🌎 ==> API server now listening on port ${PORT}!`);
+    });
+  }) 
+  .catch((e)=>{
+    console.error("=======================")
+    console.error("Failed to Initialize Server")
+    console.dir(e)
+    console.error("=======================")
+  })
 
-//Start server
-app.listen(PORT, function() {
-  console.log(`🌎 ==> API server now listening on port ${PORT}!`);
-});
