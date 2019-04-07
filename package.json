@@ -5,12 +5,13 @@
   "main": "./dist/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "babel-node /dist/server.js",
+    "start:prod": "node /dist/server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "install:client": "cd client && npm install",
     "build:server": "babel server --out-dir dist",
     "build:client": "cd client && npm run build",
+    "build": "npm run build:server && npm run build:client",
     "restart": "npm run build:server && npm run start",
     "heroku-postbuild": "npm run build",
     "rebuild:nodeSass": "cd client && yarn add --force node-sass"
