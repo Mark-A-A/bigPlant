@@ -4,8 +4,9 @@ import {
   Button,
   ButtonToolbar,
   Dropdown
-
 } from 'react-bootstrap';
+
+import { Link } from "react-router-dom"
 
 import logo from "../../assets-bh/bh-logo-optimized.png"
 
@@ -17,9 +18,9 @@ export function Nav() {
       <div className="container">
         <div className="nav-items-wrapper">
           <div className="nav-item brand-logo">
-            <a href="/">
+            <Link to="/">
               <img src={logo} alt="big-plant"></img>
-            </a>
+            </Link>
           </div>
           <div className="nav-item title">
             <div className="navbar-brand-header">
@@ -58,9 +59,11 @@ export function Nav() {
                 </Dropdown.Menu>
               </Dropdown>
 
-              <Button variant="success">
-                Logout
-              </Button>
+              <Link to="/login">
+                <Button variant="success">
+                  Logout
+                </Button>
+              </Link>
 
             </ButtonToolbar>
           </div>

@@ -14,7 +14,7 @@
     "build": "npm run build:server && npm run build:client",
     "restart": "npm run build:server && npm run start",
     "heroku-postbuild": "npm run build",
-    "rebuild:nodeSass": "cd client && yarn add --force node-sass"
+    "rebuild:nodeSass": "cd client && npm rebuild node-sass"
   },
   "author": "Mark Awai",
   "license": "ISC",
