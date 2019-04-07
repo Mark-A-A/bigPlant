@@ -5,9 +5,10 @@ const apiRoutes = require("./apiRoutes");
 // API Routes
 router.use("/api", apiRoutes);
 
-// If no API routes are hit, send the React app
+// HTTP status 404: NotFound
 router.use(function (req, res) {
-    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+    res.status(404)        
+        .send('Not found');
 });
 
 // Send every request to the React app
