@@ -8,7 +8,7 @@
     "start:prod": "babel-node /dist/server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
-    "install": "cd client && npm install",
+    "install:client": "cd client && npm install",
     "build:server": "babel server --out-dir dist",
     "build:client": "cd client && npm run build",
     "restart": "npm run build:server && npm run start",
@@ -24,8 +24,6 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.7"
   },
