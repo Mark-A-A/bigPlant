@@ -1,0 +1,8 @@
+.log-in-page {
+  .card.log-in-tile {
+    display: flex;
+    @media (min-width: 768px) {
+      width: 35%
+    } 
+  }
+}

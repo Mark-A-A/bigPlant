@@ -5,7 +5,7 @@ a:hover {
 	color: green
 }
 
-button.btn-success {
+nav button.btn-success {
 	background-color: white;
 	border-color: black;
 	color: black;
@@ -20,11 +20,13 @@ button.btn-success {
 .page-header {
 	position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  z-index: 999;
 }
 
 .page-body {
   display:block;
   width: 100%;
   margin-top: 105px;
+  padding-top: 30px;
 }
