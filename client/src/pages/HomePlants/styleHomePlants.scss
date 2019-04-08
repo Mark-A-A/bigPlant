@@ -3,15 +3,20 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    
     .plant-list-item {
       list-style-type: none;
       display:flex;
-      flex: 1 33%;
-      
-      
+      @media(min-width: 768px){
+        flex: 1 33%;
+      }
     }
+
     li.plant-list-item.ChineseMoneyPlant, li.plant-list-item.AlocasiaPolly {
-      flex:  0 1 65%;
+      flex:  1 100%;
+      @media(min-width: 768px){
+        flex:  0 1 65%;
+      }
     }
   }
 }
