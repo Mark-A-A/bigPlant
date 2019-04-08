@@ -1,0 +1,17 @@
+.plant-directory-home-page{
+  .plant-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .plant-list-item {
+      list-style-type: none;
+      display:flex;
+      flex: 1 33%;
+      
+      
+    }
+    li.plant-list-item.ChineseMoneyPlant, li.plant-list-item.AlocasiaPolly {
+      flex:  0 1 65%;
+    }
+  }
+}

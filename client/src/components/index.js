@@ -1,2 +1,2 @@
-export * from './Thumbnail'
+export * from './Plant'
 export * from './Tile'
