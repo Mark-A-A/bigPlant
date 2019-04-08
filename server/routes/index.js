@@ -5,7 +5,7 @@ const apiRoutes = require("./apiRoutes");
 // API Routes
 router.use("/api", apiRoutes);
 // API Routes
-router.use("/auth", authRoutes);
+// router.use("/auth", authRoutes);
 
 // HTTP status 404: NotFound
 router.use(function (req, res) {
