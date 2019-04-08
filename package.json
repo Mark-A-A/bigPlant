@@ -12,6 +12,7 @@
     "build:server": "babel server --out-dir dist",
     "build:client": "cd client && npm run build",
     "build": "npm run build:server && npm run build:client",
+    "seed": "cd server && cd config && node scripts/seedDB",
     "restart": "npm run build:server && npm run start",
     "heroku-postbuild": "npm run build",
     "rebuild:nodeSass": "cd client && npm rebuild node-sass"
