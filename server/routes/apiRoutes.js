@@ -1,10 +1,12 @@
 import { Router } from "express"
 import axios from "axios"
-// import { commentsController } from "../../controllers";
+import { getAllPlants } from "../controllers";
 
 const router = Router()
 
-router.get("/:plantId/comments", (req, res) => {
+router.get("/plants", getAllPlants);
+
+router.get("/plant/:plantId/comments", (req, res) => {
   res.json({ "hello": "world" })
 });
 
