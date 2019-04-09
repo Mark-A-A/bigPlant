@@ -4,6 +4,8 @@ import { Form, Button } from 'react-bootstrap';
 
 import { Tile } from '../../components'
 
+import { Link } from "react-router-dom"
+
 import "./stylesLogIn.scss";
 
 export class Login extends React.Component {
@@ -46,7 +48,11 @@ export class Login extends React.Component {
                     <Form.Control type="password" placeholder="Password" />
                   </Form.Group>
                   <Button type="submit">Log In</Button>
-                </Form>
+                  <Link to="/register">
+                    <Button variant="success">
+                      Register
+                    </Button>
+                  </Link></Form>
               </Tile>
             </div>
           </div>

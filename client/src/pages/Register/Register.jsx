@@ -3,7 +3,6 @@ import React from "react";
 import {
   Button,
   Form,
-  InputGroup
 } from 'react-bootstrap';
 
 import { Tile } from '../../components'
