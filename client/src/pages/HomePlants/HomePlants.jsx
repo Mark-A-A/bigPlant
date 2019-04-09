@@ -58,9 +58,9 @@ export class HomePlants extends React.Component {
         <div className="plant-directory-home-page">
           {
             plants.length && 
-            <div className="plant-list">
+            <ul className="plant-list">
               {this.renderPlants()}
-            </div>
+            </ul>
           }
         </div>
       </React.Fragment>
