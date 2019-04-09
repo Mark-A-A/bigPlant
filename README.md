@@ -44,29 +44,29 @@
 - [x] Set Up Root Reducer
 - [x] Add API util for axios CRUD calls
 - [x] Add mapper for plant images
-- [] Create Action Types
-- [] Create basic Dispatchers
-- [] Connect Log In form to Redux Store
-- [] Connect Register form to Redux Store
-- [] Connect Plant Page to Redux Store
-- [] Create Platn Details Page
-- [] Create comments commponent
-- [] Create comments Mongo collection
-- [] Create user register route - POST
-- [] Create user login route - POST
-- [] Create auth controller
-- [] Create JWT middleware - Sign
-- [] Create JWT middleware - Verify
-- [] Create JWT middleware - Protect
-- [] Create comments route - GET
-- [] Create comments route - POST
-- [] Server side error handling
-- [] Server side logging
-- [] Creat Mongo query Model - create/insert user
-- [] Creat Mongo query Model - Get user by Id or Name
-- [] Creat Mongo query Model- Get All comments for specific plant Id or Name
-- [] Creat Mongo query Model- Insert comment for specific plant Id or Name
-- [] Fix Mobile Responsiveness - Plant Directory Home
-- [] Fix Mobile Responsiveness - Nav
-- [] Fix Mobile Responsiveness - Plant Details page
+- [ ] Create Action Types
+- [ ] Create basic Dispatchers
+- [ ] Connect Log In form to Redux Store
+- [ ] Connect Register form to Redux Store
+- [ ] Connect Plant Page to Redux Store
+- [ ] Create Platn Details Page
+- [ ] Create comments commponent
+- [ ] Create comments Mongo collection
+- [ ] Create user register route - POST
+- [ ] Create user login route - POST
+- [ ] Create auth controller
+- [ ] Create JWT middleware - Sign
+- [ ] Create JWT middleware - Verify
+- [ ] Create JWT middleware - Protect
+- [ ] Create comments route - GET
+- [ ] Create comments route - POST
+- [ ] Server side error handling
+- [ ] Server side logging
+- [ ] Creat Mongo query Model - create/insert user
+- [ ] Creat Mongo query Model - Get user by Id or Name
+- [ ] Creat Mongo query Model- Get All comments for specific plant Id or Name
+- [ ] Creat Mongo query Model- Insert comment for specific plant Id or Name
+- [ ] Fix Mobile Responsiveness - Plant Directory Home
+- [ ] Fix Mobile Responsiveness - Nav
+- [ ] Fix Mobile Responsiveness - Plant Details page
 - [x] Heroku Build & Deployemtn
