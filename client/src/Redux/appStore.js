@@ -14,5 +14,3 @@ export const store = createStore(
     // other store enhancers if any
   )
 );
-
-
