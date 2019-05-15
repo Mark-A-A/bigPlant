@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Card } from 'react-bootstrap';
 
@@ -33,21 +34,31 @@ export class Plant extends React.PureComponent {
     return (
       <div className="plant-wrapper" role="img" aria-label="BH-Plant">
         <Card className="plant-card hollow">
-          <div className="plant-image-wrapper" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
-            <Card.Img className="plant-image" variant="top" src={src} />
-            <div className={overlayClass}>
-              {
-                isHovered && 
-                <div className="title-overlay-wrapper">
-                  <Card.Title className="plant-title-overlay">
-                    <h2>{title}</h2>
-                  </Card.Title>
-                </div>
-              }
+          <Link to={{
+            pathname: `/details/${name}`,
+            state: { ...this.props }
+          }}>
+            <div className="plant-image-wrapper" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
+              <Card.Img className="plant-image" variant="top" src={src} />
+              <div className={overlayClass}>
+                {
+                  isHovered && 
+                  <div className="title-overlay-wrapper">
+                    <Card.Title className="plant-title-overlay">
+                      <h2>{title}</h2>
+                    </Card.Title>
+                  </div>
+                }
+              </div>
             </div>
-          </div>
+          </Link>
           <Card.Body className="plant-body">
-            <Card.Title className="plant-header">{name}</Card.Title>
+            <Link to={{
+              pathname: `/details/${name}`,
+              state: {...this.props}
+            }}>
+              <Card.Title className="plant-header">{name}</Card.Title>
+            </Link>
             <Card.Header className="plant-subheader">{latinName}</Card.Header>
             <Card.Text className="plant-descr">{description}</Card.Text>
           </Card.Body>

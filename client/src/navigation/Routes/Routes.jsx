@@ -25,7 +25,7 @@ export function Routes() {
       <div className="page-body">
         <div className="container">
           <Route exact path="/" component={HomePlants}/>
-          <Route exact path="/details" component={PlantDetails}/>
+          <Route exact path="/details/:plantName" render={ props => <PlantDetails {... props} /> }/>
           <Route exact path="/logIn" component={Login}/>
           <Route exact path="/register" component={Register}/>
         </div>
