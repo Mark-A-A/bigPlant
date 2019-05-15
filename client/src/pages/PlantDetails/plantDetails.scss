@@ -1,0 +1,19 @@
+.plant-details{
+  display: flex;
+
+  section {
+    width: 50%;
+  }
+  section.image-section{
+    img {
+      width: 100%;
+    }
+  }
+  section.description-comments-section {
+    padding: 0 30px 30px;
+
+    p.description{
+      font-size: 16px;
+    }
+  }
+}
