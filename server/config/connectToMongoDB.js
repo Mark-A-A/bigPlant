@@ -6,6 +6,8 @@ const connectToMongoDB = async () => {
     console.log("...")
     console.log("..")
     console.log(".")
+    console.dir("process.env.MONGODB_URI")
+    console.dir(process.env.MONGODB_URI )
     await mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/bigPlant");
     console.log("=======================")
     console.log("Connected to Mongo")
