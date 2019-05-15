@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Plant } from '../../components'
 
@@ -42,7 +43,6 @@ export class HomePlants extends React.Component {
     return plants.map((plant,i )=>{
       const {latinName, name} = plant
       const source = plantImageMapper[latinName];
-      console.log("source =>", source);
       return (
         <li key={plant._id} className={`plant-list-item ${name.replace(/ /gi, "")}` }>
           <Plant {...plant} src={source}/>
